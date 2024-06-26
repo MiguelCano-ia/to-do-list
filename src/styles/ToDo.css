@@ -1,0 +1,47 @@
+.to-do-container {
+  width: 500px;
+  min-height: 65px;
+  background-color: #2e3b4e;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 7px;
+  border: 1px solid #ffffff;
+  align-items: center;
+  cursor: pointer;
+}
+
+.to-do-container:nth-child(3n + 1) {
+  background-color: #3c4d62;
+}
+
+.to-do-container:nth-child(3n + 2) {
+  background-color: #4a5d76;
+}
+
+.to-do-container:nth-child(3n + 3) {
+  background-color: #586d8a;
+}
+
+.to-do-text {
+  color: #ffffff; 
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere; /*El texto sera cortado para seguir hacia abajo*/
+}
+
+.to-do-icon {
+  color: #ff6b6b;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.to-do-container.complete {
+  background-color: #736be6;
+  text-decoration: line-through; /*Linea de techado*/
+}
